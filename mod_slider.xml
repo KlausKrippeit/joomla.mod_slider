@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>slider</name>
+	<creationDate>March 2016</creationDate>
+	<author>Klaus Krippeit</author>
+	<authorEmail>klaus@krippeit.org</authorEmail>
+	<copyright>Copyright (C) 2016 Klaus Krippeit</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0.0</version>
+	<description>Slider</description>
+
+	<files>
+		<filename module="mod_slider">mod_slider.php</filename>
+		<folder>css</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_slider.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_slider.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_slider.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_slider.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="MOD_SLIDER_CONFIG_BASIC_TITLE">
+
+				<field name="mode"
+					   type="list"
+					   label="MOD_SLIDER_CONFIG_MODE_LABEL"
+					   description="MOD_SLIDER_CONFIG_MODE_DESC">
+					<option value="0">MOD_SLIDER_CONFIG_MODE_OPTION_0</option>
+					<option value="1">MOD_SLIDER_CONFIG_MODE_OPTION_1</option>
+			   </field>
+
+				<field name="images_folder"
+					   type="folderlist"
+					   directory="/images/slider/"
+					   hide_default="true"
+					   label="MOD_SLIDER_CONFIG_IMAGE_FOLDER_LABEL"
+					   showon="mode:1" />
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

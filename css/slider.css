@@ -1,0 +1,49 @@
+#gallery-wrapper{
+    width: 400px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+.kSlideshowWrapper, .kSlideshowItemDiv{
+	height: 268px;
+    width: 400px;
+}
+.kSlideshowItemDiv img{
+    z-index: 400;
+}
+.kThumbnailsInnerWrapper{
+    width: 106px;
+    height: 268px;
+}
+.kThumbnailsWrapper{
+    width: 106px;
+    height: 268px;
+    position: absolute;
+    top: 18px;
+    right: -145px;
+}
+.kThumbnailsWrapper .kThumbnailsPrevPage{
+    top: -26px;
+    left: 40px;
+    background: url("../i/gtk-media-forward-up.png") no-repeat scroll 0 0 transparent;
+}
+.kThumbnailsWrapper .kThumbnailsNextPage{
+    bottom: -24px;
+    top: auto;
+    left: 40px;
+    background: url("../i/gtk-media-forward-down.png") no-repeat scroll 0 0 transparent;
+}
+.kThumbnailsPage{
+    width: 106px;
+    height: 268px;
+    text-align: left;
+}
+.kThumbnailsPage img{
+    padding: 1px;
+    border: 1px solid black;
+    margin: 2px;
+    background: white;
+}
+.kThumbnailsPage .selectedThumbnail{
+    border-color: #aaaaff;
+}
