@@ -17,7 +17,7 @@ class SliderHelper {
 
 		$images = array();
 
-		foreach (glob(JPATH_ROOT . $moduleImagesDir . $sliderDir . '/*.*') as $imageLocalPath) {
+		foreach (glob(JPATH_ROOT . $moduleImagesDir . $sliderDir .'/*') as $imageLocalPath) {
 			
 			$imageStr = '{"large":" ';
 			$imageStr .= JUri::base(true) . $moduleImagesDir . $sliderDir . substr($imageLocalPath, strlen(JPATH_ROOT . $moduleImagesDir . $sliderDir));
